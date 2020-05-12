@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfAppAdmin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAdmin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="699.77" Width="1047.698">
+    <Grid Margin="10">
+        <TextBox Name="textboxCustomerNameSelect" TextChanged="textChangedSelect" HorizontalAlignment="Left" Height="23" Margin="11,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.6,0.471"/>
+        <TextBox Name="textboxTownSelect" TextChanged="textChangedSelect" HorizontalAlignment="Left" Height="23" Margin="186,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86"/>
+        <TextBox Name="textboxPostcodeSelect" TextChanged="textChangedSelect" HorizontalAlignment="Left" Height="23" Margin="286,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66"/>
+        <ComboBox x:Name="comboboxCountryIDSearch" SelectionChanged="SelectionChanged" HorizontalAlignment="Left" Margin="363,59,0,0" VerticalAlignment="Top" Width="96"/>
+        <DataGrid Name="dgCustomer"  CanUserAddRows="False" ItemsSource="{Binding}" SelectionUnit="FullRow" SelectionChanged="RowSelection"  Margin="10,105,21,210" AutoGenerateColumns="False" RenderTransformOrigin="0.485,0.5" FontFamily="Arial">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="15" Binding="{Binding CustomerID}" Visibility="Hidden"></DataGridTextColumn>
+                <DataGridTextColumn Header="Name" Width="175" Binding="{Binding CustomerName}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Town" Width="100" Binding="{Binding Town}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Postcode" Width="75" Binding="{Binding Postcode}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Country" Width="100" Binding="{Binding CountryName}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Phone" Width="140" Binding="{Binding Phone}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Mobile" Width="140" Binding="{Binding Mobile}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="Email" Width="180" Binding="{Binding Email}" IsReadOnly="True"></DataGridTextColumn>
+            </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <Trigger Property="DataGridCell.IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightGray"   />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+        <TextBox x:Name="textboxCustomerName" HorizontalAlignment="Left" Height="23" Margin="74,459,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Arial"/>
+        <TextBox x:Name="textboxAddress1" HorizontalAlignment="Left" Height="23" Margin="74,489,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173" FontFamily="Arial"/>
+        <TextBox x:Name="textboxAddress2" HorizontalAlignment="Left" Height="23" Margin="74,519,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173" FontFamily="Arial"/>
+        <TextBox x:Name="textboxTown" HorizontalAlignment="Left" Height="23" Margin="74,549,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Arial"/>
+        <TextBox x:Name="textboxPostcode" HorizontalAlignment="Left" Height="23" Margin="74,579,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Arial"/>
+        <Button x:Name="buttonCustomerUpdate" Content="Save" HorizontalAlignment="Left" Margin="260,581,0,0"   VerticalAlignment="Top" Width="75" Click="ButtonCustomerUpdate_Click" FontFamily="Arial"/>
+        <Button x:Name="buttonNew" Content="New" Click="ButtonNew_Click" HorizontalAlignment="Left" Margin="260,602,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="comboboxCustomerTypeID"  HorizontalAlignment="Left" Margin="258,460,0,0" VerticalAlignment="Top" Width="120" FontFamily="Arial"/>
+        <ComboBox x:Name="comboboxCountryID"  HorizontalAlignment="Left" Margin="74,612,0,0" VerticalAlignment="Top" Width="120" FontFamily="Arial"></ComboBox>
+        <Button x:Name="buttonCustomerDelete" Content="Delete" Click="ButtonCustomerDelete_Click" HorizontalAlignment="Left" Margin="924,444,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial"/>
+        <Button x:Name="buttonSearchClear" Content="Clear" Click="buttonSearchClear_Click" HorizontalAlignment="Left" Margin="921,73,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial" RenderTransformOrigin="0.6,23.774"/>
+        <TextBox x:Name="textboxPhone" HorizontalAlignment="Left" Height="23" Margin="496,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Arial"/>
+        <TextBox x:Name="textboxMobile" HorizontalAlignment="Left" Height="23" Margin="496,489,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Arial"/>
+        <TextBox x:Name="textboxEmail" HorizontalAlignment="Left" Height="22" Margin="496,520,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="269" FontFamily="Arial"/>
+        <Label x:Name="labelPhone"  Content="Phone" HorizontalAlignment="Left" Margin="448,459,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelMobile" Content="Mobile" HorizontalAlignment="Left" Margin="448,489,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label x:Name="labelEmail"  Content="Email" HorizontalAlignment="Left" Margin="448,522,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="13,457,0,0" VerticalAlignment="Top" RenderTransformOrigin="-15.553,1.115" FontFamily="Arial"/>
+        <Label Content="Address 1" HorizontalAlignment="Left" Margin="13,488,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Address 2" HorizontalAlignment="Left" Margin="13,517,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Town" HorizontalAlignment="Left" Margin="13,547,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Postcode" HorizontalAlignment="Left" Margin="13,578,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Country" HorizontalAlignment="Left" Margin="13,611,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="202,458,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+
+    </Grid>
+</Window>

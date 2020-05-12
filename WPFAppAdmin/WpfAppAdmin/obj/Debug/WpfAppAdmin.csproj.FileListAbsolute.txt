@@ -1,0 +1,15 @@
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\bin\Debug\WpfAppAdmin.exe.config
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\bin\Debug\WpfAppAdmin.exe
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\bin\Debug\WpfAppAdmin.pdb
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.csprojAssemblyReference.cache
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\MainWindow.g.cs
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\App.g.cs
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin_MarkupCompile.cache
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin_MarkupCompile.lref
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\MainWindow.baml
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.g.resources
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.Properties.Resources.resources
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.csproj.GenerateResource.cache
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.exe
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.pdb
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppAdmin\obj\Debug\WpfAppAdmin.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\bin\Debug\WpfAppSale.exe.config
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\bin\Debug\WpfAppSale.exe
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\bin\Debug\WpfAppSale.pdb
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\MainWindow.g.cs
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\App.g.cs
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale_MarkupCompile.cache
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale_MarkupCompile.lref
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\MainWindow.baml
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale.g.resources
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale.Properties.Resources.resources
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale.csproj.GenerateResource.cache
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale.csproj.CoreCompileInputs.cache
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale.exe
+C:\Users\richa\Documents\Projects\WPFAppAdmin\WpfAppSale\obj\Debug\WpfAppSale.pdb
